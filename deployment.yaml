@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cicd-go
+spec:
+  containers:
+    - name: cicd-go
+      image: cicd-go:
+      imagePullPolicy: IfNotPresent
