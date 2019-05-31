@@ -5,5 +5,5 @@ metadata:
 spec:
   containers:
     - name: cicd-go
-      image: cicd-go:
+      image: eu.gcr.io/happy-fleet-service-dev/test/cicd-go:v1
       imagePullPolicy: IfNotPresent

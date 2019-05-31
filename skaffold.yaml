@@ -2,8 +2,10 @@ apiVersion: skaffold/v1beta11
 kind: Config
 build:
   artifacts:
-  - image: cicd-go:v1
+  - image: eu.gcr.io/happy-fleet-service-dev/test/cicd-go
+  googleCloudBuild:
+      projectId: happy-fleet-service-dev
 deploy:
   kubectl:
     manifests:
-    - deployment.yaml
+    - k8s/deployment.yaml
